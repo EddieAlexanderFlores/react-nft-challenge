@@ -12,7 +12,8 @@ function App() {
   const [selectedPunk, setSelectedPunk] = useState(0);
 
   useEffect(() => {
-    const getMyNfts = async() => {
+    //const getMyNfts = async() => {
+    const getMyNfts = () => {
       const url = 'https://testnets-api.opensea.io/assets?asset_contract_address=0x104ADFE3E1952d382575D7Af8CE2467256188921&order_direction=asc';
       
       fetch(url).then(response => response.json()).then(openseaData => {
